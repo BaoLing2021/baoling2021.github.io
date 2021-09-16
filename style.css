@@ -18,7 +18,7 @@ h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align
 .center {
     margin: auto;
     width: 80%;
-    
+    text-align:center;
     /* border: 3px solid green;
     padding: auto 10px; */
   }
@@ -59,6 +59,7 @@ h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align
 	border: 1px solid #996600;
 	margin-bottom: 3%;
 	padding: 1%;
+	font-size: 200%;
 
 }
 .verse3 {font-size:  120%;line-height: 200%; ; color:#CC6600; margin-left:80px; font-weight:bold}
