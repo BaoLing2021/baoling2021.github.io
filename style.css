@@ -1,13 +1,52 @@
 body { 
     color: #b88067;
     background-color: rgb(8, 42, 53);
-    text-align:center;
-    font-family: 'Noto Serif SC', serif;}
+    /* text-align:center; */
+    font-family: 'Noto Serif SC', serif;
+	/* font-family: 'Ma Shan Zheng', cursive;*/
+} 
+
+.accordion {
+	background-color: rgb(8, 42, 53);
+	/* color: #444; */
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	/* text-align: left; */
+	outline: none;
+	/* font-size: 15px; */
+	transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+	/* background-color: #ccc; */
+  }
+  
+  .accordion:after {
+	content: '\002B';
+	/* color: #777; */
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2212";
+  }
+  
+  .panel {
+	padding: 0 18px;
+	/* background-color: white; */
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
 
 p {font-size:180%;line-height:  200%;;font-weight:bold; text-align: left;width:100%}
 
 h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align:center;padding-bottom: 10px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #CCCCCC}
-
+h2 {font-size: 220%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align:center;padding-bottom: 10px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #CCCCCC}
 .box {
 	
     display: flex;
@@ -47,7 +86,7 @@ h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align
 .verse {font-size: 140%;line-height:150%;  color:#CC0000; text-align:center}
 .verse1 {	
 	font-size: 340%;
-	color:#996600;
+	color:#a5710a;
 	text-align:center;
 }
 	
@@ -68,7 +107,6 @@ h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align
 	font-size: 140%;
 	line-height:150%;
 	color:#996600;
-	 ;
 	/* background-color: #fdf3d3; */
 	border: 1px solid #996600;
 	margin-bottom: 30px;
@@ -85,7 +123,6 @@ h1 {font-size: 300%;color:#b84b0c;font-weight:bold;margin-bottom:15px;text-align
 	border: 1px solid #666699;
 	margin-bottom: 30px;
 	padding: 2pt;; font-weight:bold
-
 }
 .spacer {
 	clear: both;
